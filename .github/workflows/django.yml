@@ -5,6 +5,9 @@ on: [push]
 
 jobs:
   build:
+    strategy:
+      matrix:
+        postgresql-version: ['14.9','15]
 
     runs-on: ubuntu-latest
 
